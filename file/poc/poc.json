@@ -1,0 +1,11 @@
+{
+  "Name":"name",
+  "Req":{
+    "Request":"GET",
+    "Header":{
+
+    },
+    "Body":""
+  },
+  "Characteristic":""
+}
