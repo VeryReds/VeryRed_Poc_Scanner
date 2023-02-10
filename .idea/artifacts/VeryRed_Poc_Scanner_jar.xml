@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VeryRed_Poc_Scanner:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/VeryRed_Poc_Scanner_jar</output-path>
+    <root id="archive" name="VeryRed_Poc_Scanner.jar">
+      <element id="module-output" name="VeryRed_Poc_Scanner" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../code_tool/JetBrains/apache-maven-3.8.6/maven/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../code_tool/JetBrains/apache-maven-3.8.6/maven/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
