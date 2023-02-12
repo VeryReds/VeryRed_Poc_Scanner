@@ -1,62 +1,82 @@
 package veryRed.entity;
-import org.codehaus.jackson.annotate.JsonProperty;
 
 import java.util.Map;
 
 public class PocJsonObject {
-    @JsonProperty("Name")
-    private String name;
-    @JsonProperty("Req")
-    private Req req;
-    @JsonProperty("Characteristic")
-    private String characteristic;
-    public void setName(String name) {
-        this.name = name;
-    }
+    private String Name;
+    private Req[] Req;
+    private String Characteristic;
+
     public String getName() {
-        return name;
+        return Name;
     }
 
-    public void setReq(Req req) {
-        this.req = req;
+    public void setName(String name) {
+        Name = name;
     }
-    public Req getReq() {
-        return req;
+
+    public Req[] getReq() {
+        return Req;
+    }
+
+    public void setReq(Req[] req) {
+        Req = req;
+    }
+
+    public String getCharacteristic() {
+        return Characteristic;
     }
 
     public void setCharacteristic(String characteristic) {
-        this.characteristic = characteristic;
-    }
-    public String getCharacteristic() {
-        return characteristic;
-    }
-}
-class Req {
-    @JsonProperty("Request")
-    private String request;
-    @JsonProperty("Header")
-    private Map<String,String> header;
-    @JsonProperty("Body")
-    private String body;
-    public void setRequest(String request) {
-        this.request = request;
-    }
-    public String getRequest() {
-        return request;
+        Characteristic = characteristic;
     }
 
-    public void setHeader(Map<String,String> header) {
-        this.header = header;
-    }
-    public Map<String,String> getHeader() {
-        return header;
-    }
+    public static class Req {
+        private String Request;
+        private String Url;
+        private Map<String, String> Header;
+        private String Body;
 
-    public void setBody(String body) {
-        this.body = body;
-    }
-    public String getBody() {
-        return body;
-    }
+        public String getRequest() {
+            return Request;
+        }
 
+        public void setRequest(String request) {
+            Request = request;
+        }
+
+        public String getUrl() {
+            return Url;
+        }
+
+        public void setUrl(String url) {
+            Url = url;
+        }
+
+        public Map<String, String> getHeader() {
+            return Header;
+        }
+
+        public void setHeader(Map<String, String> header) {
+            Header = header;
+        }
+
+        public String getBody() {
+            return Body;
+        }
+
+        public void setBody(String body) {
+            Body = body;
+        }
+
+        @Override
+        public String toString() {
+            return "Req{" +
+                    "Request='" + Request + '\'' +
+                    ", Url='" + Url + '\'' +
+                    ", Header=" + Header +
+                    ", Body='" + Body + '\'' +
+                    '}';
+        }
+    }
 }

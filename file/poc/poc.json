@@ -1,11 +1,12 @@
 {
   "Name":"name",
-  "Req":{
+  "Req":[{
     "Request":"GET",
+    "Url": "",
     "Header":{
 
     },
     "Body":""
-  },
+  }],
   "Characteristic":""
 }
