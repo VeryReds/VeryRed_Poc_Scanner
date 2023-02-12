@@ -1,6 +1,7 @@
 package veryRed;
 
 
+import veryRed.controller.Attack;
 import veryRed.tools.Cmd;
 
 import java.util.Map;
@@ -12,8 +13,8 @@ public class Main {
             System.out.println("url文件为空");
             System.exit(-1);
         }
-        for (String s : urls) {
-            System.out.println(s);
-        }
+
+        Attack attack = new Attack();
+        attack.Run(urls);
     }
 }
