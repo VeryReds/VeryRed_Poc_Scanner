@@ -4,7 +4,7 @@ import veryRed.entity.PocJsonObject;
 import veryRed.tools.File_Tools;
 
 import java.util.List;
-
+import java.util.Map;
 
 
 /**
@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Info {
     public static List<PocJsonObject> POCS;
+
 
     public static void GET_POC(){
         POCS = File_Tools.Get_Poc_Json();
